@@ -1,0 +1,14 @@
+# Pythonin välitiedostot
+__pycache__/
+*.py[cod]
+
+# Virtuaaliympäristö
+venv/
+.env/
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+desktop.ini
