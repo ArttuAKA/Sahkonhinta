@@ -22,6 +22,7 @@ def hae_sahkon_hinnat():
     ka = sum(hinnat) / len(hinnat)
 
     print(" Päivän yhteenveto:")
+    
     print(f"  Keskimääräinen hinta: {ka:.2f} snt/kWh")
     print(f"  Halvin tunti: {min_tunti['aikaleima_suomi']} ({min_tunti['hinta']:.2f} snt/kWh)")
     print(f"  Kallein tunti: {max_tunti['aikaleima_suomi']} ({max_tunti['hinta']:.2f} snt/kWh)")
