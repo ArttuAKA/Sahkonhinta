@@ -6,7 +6,7 @@ def hae_sahkon_hinnat():
     response = requests.get(url)
     data = response.json()
 
-    # Poimitaan tiedot
+    # Poimitaan tiedot hinnoista
     ajat = [item["aikaleima_suomi"][-5:] for item in data]  # esim. '00:00'
     hinnat = [item["hinta"] for item in data]
 
