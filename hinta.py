@@ -6,7 +6,7 @@ def hae_sahkon_hinnat():
     response = requests.get(url)
     data = response.json()
 
-    # Poimitaan tiedot
+    
     ajat = [item["aikaleima_suomi"][-5:] for item in data]  # esim. '00:00'
     hinnat = [item["hinta"] for item in data]
 
@@ -22,9 +22,9 @@ def hae_sahkon_hinnat():
     ka = sum(hinnat) / len(hinnat)
 
     print(" Huomisen päivän yhteenveto:")
-    print(f"  Keskimääräinen hinta: {ka:.2f} snt/kWh")
-    print(f"  Halvin tunti: {min_tunti['aikaleima_suomi']} ({min_tunti['hinta']:.2f} snt/kWh)")
-    print(f"  Kallein tunti: {max_tunti['aikaleima_suomi']} ({max_tunti['hinta']:.2f} snt/kWh)")
+    print(f" Keskimääräinen hinta: {ka:.2f} snt/kWh")
+    print(f" Halvin tunti: {min_tunti['aikaleima_suomi']} ({min_tunti['hinta']:.2f} snt/kWh)")
+    print(f" Kallein tunti: {max_tunti['aikaleima_suomi']} ({max_tunti['hinta']:.2f} snt/kWh)")
 
 
     return hinnat
