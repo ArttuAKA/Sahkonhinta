@@ -21,8 +21,7 @@ def hae_sahkon_hinnat():
     max_tunti = max(data, key=lambda x: x["hinta"])
     ka = sum(hinnat) / len(hinnat)
 
-    print(" Päivän yhteenveto:")
-    
+    print(" Huomisen päivän yhteenveto:")
     print(f"  Keskimääräinen hinta: {ka:.2f} snt/kWh")
     print(f"  Halvin tunti: {min_tunti['aikaleima_suomi']} ({min_tunti['hinta']:.2f} snt/kWh)")
     print(f"  Kallein tunti: {max_tunti['aikaleima_suomi']} ({max_tunti['hinta']:.2f} snt/kWh)")
